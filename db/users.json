@@ -1,0 +1,14 @@
+{
+   "name":"Contact",
+   "description":"Creates a contact table",
+   "install":"CREATE TABLE contact (id INT NOT NULL AUTO_INCREMENT,PRIMARY KEY(id),username VARCHAR(25),password VARCHAR(255))",
+   "options":{
+      "firstName":"ALTER TABLE 'contact' ADD firstName VARCHAR(25)",
+      "lastName":"ALTER TABLE 'contact' ADD lastName VARCHAR(25)",
+      "phone":"ALTER TABLE 'contact' ADD phone VARCHAR(25)",
+      "address":"ALTER TABLE 'contact' ADD address VARCHAR(25)",
+      "zip":"ALTER TABLE 'contact' ADD zip VARCHAR(25)"
+   },
+   "uninstall":"DROP TABLE contact",
+   "requirements":"none"
+}
