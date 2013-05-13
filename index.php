@@ -11,11 +11,21 @@ $username = '';
 $password = '';
 $viewsPath = '/web/'; // Path to the view folder
 $appPath = '/app/'; // Path to the app folder
+$adminUsername = '';
+$adminPassword = '';
+
+
+# ------------- You shouldn't have to edit below this line -------------
+
+// Setup auto-loader
+spl_autoload_register(function ($class) {
+    include 'app/classes/' . $class . '.class.php';
+});
 
 $pdo = new PDO("mysql:host=$host;dbname=$dbName", $username, $password);
-$requestURI = $_SERVER['REQUEST_URI'];
 
 // Get matching URL view and app
+$requestURI = $_SERVER['REQUEST_URI'];
 $stmt = $pdo->prepare('SELECT * FROM urls WHERE uri=?');
 $data = array($requestURI);
 $stmt->execute($data);
