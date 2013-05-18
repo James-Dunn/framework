@@ -1,0 +1,10 @@
+{
+   "name":"Urls",
+   "description":"Creates a urls table",
+   "install":"CREATE TABLE urls (id INT NOT NULL AUTO_INCREMENT,PRIMARY KEY(id),uri VARCHAR(255),app VARCHAR(255)),theme VARCHAR(255))",
+   "options":{
+      "none":""
+   },
+   "uninstall":"DROP TABLE urls",
+   "requirements":"none"
+}
