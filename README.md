@@ -1,5 +1,4 @@
 #Not ready yet!!!
-=========
 
 Still under development. Check back later.<br />
 Light-weight, modular PHP / MySQL framework.
@@ -19,7 +18,7 @@ Light-weight, modular PHP / MySQL framework.
   * Only 6 files in the core (4 of which are optional)
   * Completly modular functionality
 * One-line module execution
-  * Most class methods are declared staticlly so you don't have to instantiate them
+  * Most class methods are declared static so you don't have to instantiate them
   * Use of PHP's autoload functionality so you don't even have to include the file
   * e.g. <?php echo UserRegistration::form($pdo); ?>
 
